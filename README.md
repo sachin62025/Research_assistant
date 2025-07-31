@@ -55,6 +55,9 @@ Research_assistant/
 git clone https://github.com/sachin62025/Research_assistant.git
 cd Research_assistant
 ```
+### Add these API key in .env file 
+ GOOGLE_API_KEY  
+ CORE_API_KEY ## this site 'https://core.ac.uk/'
 ##  Create virtual environment and install dependencies
 ```bash
 python -m venv venv
