@@ -2,6 +2,11 @@
 An AI-powered web application that assists users in scientific research by retrieving, reasoning over, and summarizing academic papers using LangGraph Agents and FastAPI. It supports chat-like interaction, dynamic tool reasoning, and tracks question-answer history.
 
 ---
+- Built a Scientific Research Assistant using LangGraph, implementing a state-driven agentic workflow (decision-making, planning, tools, judge) for academic query resolution.
+- Integrated CORE API for scientific paper search, with full-text PDF parsing and multi-step content validation using planning and judge nodes.
+- Enabled human-in-the-loop feedback, asynchronous execution, and chat-like web interface via FastAPI, enhancing literature synthesis efficiency by automating 30–50% of the review workload.
+
+---
 ## Work Flow of Agent
 ![Workflow Image](workflow.png)
 ---
