@@ -1,0 +1,85 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scientific Research Assistant</h1>
+        <form action="/research" method="post">
+            <textarea name="query" placeholder="Ask something like: Find papers on CRISPR for 2023-2024..." required></textarea>
+            <button type="submit">Search</button>
+        </form>
+
+        {% if timeline %}
+        <div class="timeline">
+            <h2>🔍 What AI is doing</h2>
+            {% for line in timeline %}
+                <p>{{ line | safe }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if final %}
+        <div class="result">
+            <h2> Final Answer</h2>
+            <div class="result">
+                {{ final | safe }}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scientific Research Assistant</h1>
+        <form action="/research" method="post">
+            <textarea name="query" placeholder="Ask something like: Find papers on CRISPR for 2023-2024..." required></textarea>
+            <button type="submit">Search</button>
+        </form>
+
+        {% if timeline %}
+        <div class="timeline">
+            <h2>🔍 What AI is doing</h2>
+            {% for line in timeline %}
+                <p>{{ line | safe }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        {% if final %}
+        <div class="result">
+            <h2>Final Answer</h2>
+            <div class="result">
+                {{ final | safe }}
+            </div>
+        </div>
+        {% endif %}
+
+        {% if feedback_question %}
+        <form action="/submit-feedback" method="post">
+            <div>
+                <label><b>Feedback required:</b> {{ feedback_question }}</label><br>
+                <input type="text" name="feedback" required>
+                <button type="submit">Submit Feedback</button>
+            </div>
+        </form>
+        {% endif %}
+    </div>
+</body>
+</html>

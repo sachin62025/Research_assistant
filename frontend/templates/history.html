@@ -1,0 +1,9 @@
+<h2>History</h2>
+<ul>
+  {% for item in history %}
+    <li>
+      <strong>Question:</strong> {{ item.question }}<br>
+      <strong>Final Answer:</strong> {{ item.final_answer[:200] }}...
+    </li>
+  {% endfor %}
+</ul>

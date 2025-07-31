@@ -1,0 +1,13 @@
+langgraph
+langchain
+pydantic
+python-dotenv
+urllib3
+pdfplumber
+langchain-core
+fastapi
+jinja2
+fastapi[all]
+markdown
+itsdangerous
+
