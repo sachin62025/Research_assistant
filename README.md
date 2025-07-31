@@ -1,8 +1,11 @@
-# Scientific Research Assistant using LangGraph
+# Scientific Research Assistant with Agent
 An AI-powered web application that assists users in scientific research by retrieving, reasoning over, and summarizing academic papers using LangGraph Agents and FastAPI. It supports chat-like interaction, dynamic tool reasoning, and tracks question-answer history.
 
 ---
-
+## Work Flow of Agent
+![Workflow Image](workflow.png)
+---
+To understand it better, please refer to the Jupyter Notebook.
 ## Features
 
 - Ask complex research questions in natural language
@@ -47,16 +50,18 @@ Research_assistant/
 ├── requirements.txt
 └── run.py
 ```
+## Clone the repository
 ```bash
 git clone https://github.com/sachin62025/Research_assistant.git
 cd Research_assistant
 ```
+##  Create virtual environment and install dependencies
 ```bash
 python -m venv venv
 source venv/bin/activate   # On Windows use: venv\Scripts\activate
 pip install -r requirements.txt
 ```
+## Run the FastAPI server
 ```bash
 python run.py
 ```
-
