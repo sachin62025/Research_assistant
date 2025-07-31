@@ -58,7 +58,7 @@ cd Research_assistant
 ##  Create virtual environment and install dependencies
 ```bash
 python -m venv venv
-source venv/bin/activate   # On Windows use: venv\Scripts\activate
+venv\Scripts\activate   # On Windows
 pip install -r requirements.txt
 ```
 ## Run the FastAPI server
